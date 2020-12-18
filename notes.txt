@@ -1,4 +1,4 @@
-- change title: "music" --> "trends in music"
+- change title: "music" --> "trends in music" - Done
 ------------------------------------------------------------------------------------------
 *to do:*
 nate: 
@@ -22,7 +22,13 @@ daniel:
         nate was more interested in analysis rather than prediction)
 ------------------------------------------------------------------------------------------
 *in progress:*
-
+nate:
+    *   try to manipulate data/create visualizations (time as x-variable) 
+        to see if there's any patterns in the data
+------------------------------------------------------------------------------------------
+*completed:*
+nate:
+    1. create df from data.csv
 ------------------------------------------------------------------------------------------
 *notes for writing analysis:*
 
