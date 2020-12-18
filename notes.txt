@@ -16,7 +16,7 @@ sonya:
     
 daniel:
     - talk w nate in gc about findings in data to figure out what patterns to talk about in
-         analysis
+         analysis (try keep project related messages in gc instead dms so everyone's in loop)
     - write analysis/bullet points for analysis 
     - start thinking about coding for predictive algorithm (we can work together on this since 
         nate was more interested in analysis rather than prediction)
