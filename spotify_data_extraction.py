@@ -43,31 +43,33 @@ def getTrackFeatures(id):
 
 
 
+ct = 0
+tracks = []
+
 
 for filename in os.listdir(os.getcwd()+'/top200_data'):    
-    start_date = filename[19:29]
-    end_date = filename[31:41]
-    data = pd.read_csv('data.csv')
-    top = pd.read_csv(os.getcwd() + '/top200_data/'+filename)
-    temp = top.URL
+    try:
+        start_date = filename[19:29]
+        end_date = filename[31:41]
+        top = pd.read_csv(os.getcwd() + '/top200_data/'+filename)
+        temp = top.URL[:20]
         
-    tracks = []
 
-    for url in temp:
-        track = getTrackFeatures(url[31:])
-        tracks.append(track)
-
-    temp = pd.DataFrame(tracks, columns = ['name', 'album', 'artist', 'release_date', 'length', 'popularity', 'danceability', 'acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'time_signature'])
+        for url in temp:
+            track = getTrackFeatures(url[31:])
+            track.append(start_date)
+            track.append(end_date)
+            tracks.append(track)
         
-    temp['start_date'] = start_date
-    temp['end_date'] = end_date
-    temp.to_csv((os.getcwd() + "/top200_data/temp.csv"), sep = ',')
-    temp = pd.read_csv(os.getcwd() + '/top200_data/temp.csv')
-    temp = temp.drop(temp)
-    os.remove(os.getcwd() + '/top200_data/temp.csv')
 
-    print(temp, data)
+        ct += 1
+    except:
+        print('Unable to extract from '+ filename)
 
-    temp = data.append(temp)
-    
-    temp.to_csv("data.csv", sep = ',')
+print(str(ct) + " files completed")
+
+try:
+    temp = pd.DataFrame(tracks, columns = ['name', 'album', 'artist', 'release_date', 'length', 'popularity', 'danceability', 'acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'time_signature','start_date','end_date'])
+    temp.to_csv("data.csv", sep = ',', index=False)
+except:
+    print("Unable to save song data to csv")
