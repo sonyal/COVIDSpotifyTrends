@@ -1,8 +1,8 @@
 - change title: "music" --> "trends in music"
----------------------------------------------
+------------------------------------------------------------------------------------------
 *to do:*
 nate: 
-    (feel free to pass any tasks to daniel. not sure how much you were able to fill him in a couple days ago)
+    (feel free to pass any tasks to daniel)
     1. create df from data.csv
     2. try to manipulate data/create visualizations (time as x-variable) 
         to see if there's any patterns in the data
@@ -20,10 +20,10 @@ daniel:
     - write analysis/bullet points for analysis 
     - start thinking about coding for predictive algorithm (we can work together on this since 
         nate was more interested in analysis rather than prediction)
----------------------------------------------
+------------------------------------------------------------------------------------------
 *in progress:*
 
----------------------------------------------
+------------------------------------------------------------------------------------------
 *notes for writing analysis:*
 
 analysis:
