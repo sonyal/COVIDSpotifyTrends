@@ -1,0 +1,10 @@
+- change title to "trends in music"
+
+analysis:
+    -patterns in characteristics of songs across diff periods of pandemic
+    
+predictive:
+    -how will trends continue as pandemic progresses and in the months following
+
+limitations:
+    -only analyzed spotify data
