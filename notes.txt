@@ -1,4 +1,29 @@
-- change title to "trends in music"
+- change title: "music" --> "trends in music"
+
+*to do:*
+nate: 
+    (feel free to pass any tasks to daniel. not sure how much you were able to fill him in a couple days ago)
+    1. create df from data.csv
+    2. try to manipulate data/create visualizations (time as x-variable) 
+        to see if there's any patterns in the data
+    3. write analysis or bullet points for analysis for me or daniel to write
+
+sonya:
+    - create more to do items 
+    - either write analysis about patterns in characteristics of songs during diff pds or
+        classify groups of characteristics with moods
+    - predictive
+    
+daniel:
+    - talk w nate in gc about findings in data to figure out what patterns to talk about in
+         analysis
+    - write analysis/bullet points for analysis 
+    - start thinking about coding for predictive algorithm (we can work together on this since 
+        nate was more interested in analysis rather than prediction)
+
+*in progress:*
+
+*notes for writing analysis:*
 
 analysis:
     -patterns in characteristics of songs across diff periods of pandemic
