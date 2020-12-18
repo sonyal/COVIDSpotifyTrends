@@ -1,5 +1,5 @@
 - change title: "music" --> "trends in music"
-
+---------------------------------------------
 *to do:*
 nate: 
     (feel free to pass any tasks to daniel. not sure how much you were able to fill him in a couple days ago)
@@ -20,9 +20,10 @@ daniel:
     - write analysis/bullet points for analysis 
     - start thinking about coding for predictive algorithm (we can work together on this since 
         nate was more interested in analysis rather than prediction)
-
+---------------------------------------------
 *in progress:*
 
+---------------------------------------------
 *notes for writing analysis:*
 
 analysis:
