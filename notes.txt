@@ -2,11 +2,7 @@
 ------------------------------------------------------------------------------------------
 *to do:*
 nate: 
-    (feel free to pass any tasks to daniel)
-    1. create df from data.csv
-    2. try to manipulate data/create visualizations (time as x-variable) 
-        to see if there's any patterns in the data
-    3. write analysis or bullet points for analysis for me or daniel to write
+    - write analysis or bullet points for analysis for me or daniel to write
 
 sonya:
     - create more to do items 
@@ -23,8 +19,12 @@ daniel:
 ------------------------------------------------------------------------------------------
 *in progress:*
 nate:
-    *   try to manipulate data/create visualizations (time as x-variable) 
+    - try to manipulate data/create visualizations (time as x-variable) 
         to see if there's any patterns in the data
+
+sonya:
+    - cleaning up final.ipynb from coding for pre-covid stats and leaving notes scattered across notebook
+    - write-up for pre-covid analysis
 ------------------------------------------------------------------------------------------
 *completed:*
 nate:
