@@ -43,10 +43,8 @@ def getTrackFeatures(id):
   return track
 
 
-
 ct = 0
 tracks = []
-
 
 for filename in os.listdir(os.getcwd()+'/top200_data'):    
     try:
@@ -61,7 +59,6 @@ for filename in os.listdir(os.getcwd()+'/top200_data'):
             track.append(start_date)
             track.append(end_date)
             tracks.append(track)
-        
 
         ct += 1
     except:
