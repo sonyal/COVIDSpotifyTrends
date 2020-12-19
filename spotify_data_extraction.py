@@ -53,7 +53,7 @@ for filename in os.listdir(os.getcwd()+'/top200_data'):
         start_date = filename[19:29]
         end_date = filename[31:41]
         top = pd.read_csv(os.getcwd() + '/top200_data/'+filename)
-        temp = top.URL[:20]
+        temp = top.URL
         
 
         for url in temp:
