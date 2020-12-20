@@ -46,11 +46,11 @@ def getTrackFeatures(id):
 ct = 0
 tracks = []
 
-for filename in os.listdir(os.getcwd()+'/top200_data/2019'):    
+for filename in os.listdir(os.getcwd()+'/top200_data/'):    
     try:
         start_date = filename[19:29]
         end_date = filename[31:41]
-        top = pd.read_csv(os.getcwd() + '/top200_data/2019/'+filename)
+        top = pd.read_csv(os.getcwd() + '/top200_data/'+filename)
         temp = top.URL[:10]
 
         
@@ -69,6 +69,6 @@ print(str(ct) + " files completed")
 
 try:
     temp = pd.DataFrame(tracks, columns = ['name', 'album', 'artist', 'release_date', 'length', 'popularity', 'danceability', 'acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'time_signature','start_date','end_date'])
-    temp.to_csv("data10_19.csv", sep = ',', index=False)
+    temp.to_csv("data10.csv", sep = ',', index=False)
 except:
     print("Unable to save song data to csv")
