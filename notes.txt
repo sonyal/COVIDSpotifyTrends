@@ -5,17 +5,15 @@ nate:
     - write analysis or bullet points for analysis for me or daniel to write
 
 sonya:
-    - create more to do items 
-    - either write analysis about patterns in characteristics of songs during diff pds or
-        classify groups of characteristics with moods
-    - predictive
+    - writing analysis for pre- vs during covid spotify data
+    - writing analysis for prediction
+    - cleaning up final.ipynb from coding for pre-covid stats and leaving notes scattered across notebook
+    - write-up for pre-covid analysis
     
 daniel:
-    - talk w nate in gc about findings in data to figure out what patterns to talk about in
-         analysis (try keep project related messages in gc instead of dms so everyone's in loop)
-    - write analysis/bullet points for analysis 
-    - start thinking about coding for predictive algorithm (we can work together on this since 
-        nate was more interested in analysis rather than prediction)
+    - write:
+        > motivation
+        > context of topic
 ------------------------------------------------------------------------------------------
 *in progress:*
 nate:
@@ -23,17 +21,14 @@ nate:
         to see if there's any patterns in the data
 
 sonya:
-    - writing analysis for pre- vs during covid spotify data
-    - merge graphs for pre vs during
-    - writing prediction alg
-    - cleaning up final.ipynb from coding for pre-covid stats and leaving notes scattered across notebook
-    - write-up for pre-covid analysis
+
 ------------------------------------------------------------------------------------------
 *completed:*
 nate:
-    1. create df from data.csv
+    - create df from data.csv
 
-
+sonya:
+    - coding for prediction + pre vs during covid exploratory 
 ------------------------------------------------------------------------------------------
 *notes for writing analysis:*
 
