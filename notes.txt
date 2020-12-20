@@ -23,12 +23,17 @@ nate:
         to see if there's any patterns in the data
 
 sonya:
+    - writing analysis for pre- vs during covid spotify data
+    - merge graphs for pre vs during
+    - writing prediction alg
     - cleaning up final.ipynb from coding for pre-covid stats and leaving notes scattered across notebook
     - write-up for pre-covid analysis
 ------------------------------------------------------------------------------------------
 *completed:*
 nate:
     1. create df from data.csv
+
+
 ------------------------------------------------------------------------------------------
 *notes for writing analysis:*
 
