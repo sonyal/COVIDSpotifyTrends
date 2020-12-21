@@ -1,21 +1,21 @@
+# python libraries used
 import os
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import pandas as pd
-import numpy as np
 
-
+# reads the keys needed to access Spotify's Developer API from a text file in the folder 
 try:
     client_id = open('client_id.txt').read()
     client_secret = open('client_secret.txt').read()
 except:
     print("error")
 
+# gaining authetication to Spotify API
 client_credentials_manager = SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-
+# takes in a song's ID to extract and return the song's info once complete
 def getTrackFeatures(id):
   meta = sp.track(id)
   features = sp.audio_features(id)
@@ -46,6 +46,8 @@ def getTrackFeatures(id):
 ct = 0
 tracks = []
 
+# for each csv file in the top200_data folder, extract the song ID from each song in the file. then,
+# make an API call on each ID to extract track info for each song and save it in an array
 for filename in os.listdir(os.getcwd()+'/top200_data/'):    
     try:
         start_date = filename[19:29]
@@ -67,6 +69,7 @@ for filename in os.listdir(os.getcwd()+'/top200_data/'):
 
 print(str(ct) + " files completed")
 
+# organize the song data by inserting it into a DataFrame table and then writing it to a csv for later use
 try:
     temp = pd.DataFrame(tracks, columns = ['name', 'album', 'artist', 'release_date', 'length', 'popularity', 'danceability', 'acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'time_signature','start_date','end_date'])
     temp.to_csv("data10.csv", sep = ',', index=False)
